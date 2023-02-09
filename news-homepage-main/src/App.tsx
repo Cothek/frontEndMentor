@@ -44,13 +44,9 @@ function App() {
 export default App;
 
 function Header({
-  handleNavHidden,
-  isMobile,
-  navHidden,
-}: {
-  handleNavHidden: Function;
-  isMobile: Boolean;
-  navHidden: Boolean;
+  handleNavHidden = () => {},
+  isMobile = false,
+  navHidden = true,
 }) {
   useEffect(() => {}, [navHidden]);
 
